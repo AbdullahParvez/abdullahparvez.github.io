@@ -1,398 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Homepage</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.bundle.css">
-  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>A M M Parvez | AI & Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/4e5a72c756.js" crossorigin="anonymous"></script>
+    <style>
+      :root {
+        --bg-dark: #0f172a;
+        --card-bg: #1e293b;
+        --text-main: #f8fafc;
+        --text-muted: #94a3b8;
+        --accent: #38bdf8;
+      }
 
-<body>
-  <!-- <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
-          <i class="fab fa-2x fa-github"></i>
-        </a>
-      </div>
-      <div class="navbar-item is-hidden-desktop">
-        <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-          <i class="fas fa-2x fa-globe"></i>
-        </a>
-      </div>
-    </div>
-    <div class="navbar-menu">
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <a href="https://github.com/mmacneil" class="icon is-large has-text-light">
-            <i class="fab fa-2x fa-github"></i>
-          </a>
-        </div>
-        <div class="navbar-item">
-          <a href="https://fullstackmark.com" class="icon is-large has-text-light">
-            <i class="fas fa-2x fa-globe"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav> -->
+      body {
+        background-color: var(--bg-dark);
+        color: var(--text-main);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
 
-  <section class="hero is-primary">
-    <div class="hero-body">
+      .hero.is-dark-custom {
+        background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+        border-bottom: 1px solid #334155;
+      }
+
+      .title,
+      .subtitle,
+      .strong,
+      strong {
+        color: var(--text-main) !important;
+      }
+
+      .text-muted {
+        color: var(--text-muted) !important;
+      }
+
+      .card-custom {
+        background-color: var(--card-bg);
+        border: 1px solid #334155;
+        border-radius: 12px;
+        padding: 1.75rem;
+        margin-bottom: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card-custom:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .tag-custom {
+        background-color: #334155 !important;
+        color: var(--accent) !important;
+        font-weight: 500;
+        border-radius: 6px;
+      }
+
+      .accent-text {
+        color: var(--accent) !important;
+      }
+
+      hr {
+        background-color: #334155;
+        height: 1px;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .contact-link {
+        color: var(--text-main);
+        transition: color 0.2s;
+      }
+
+      .contact-link:hover {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="hero is-dark-custom is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-3 has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img class="is-rounded" src="img/parvez.jpg" onerror="this.src='https://via.placeholder.com/128'"
+                  style="border: 3px solid var(--accent);">
+              </figure>
+            </div>
+            <div class="column is-9 has-text-centered-mobile">
+              <h1 class="title is-1">A M M Parvez</h1>
+              <h2 class="subtitle is-4 accent-text">AI Developer & Software Engineer</h2>
+              <p class="is-size-5 text-muted mb-4">
+                <i class="fas fa-map-marker-alt"></i> Nagoya, Aichi, Japan &nbsp;|&nbsp;
+                <i class="fas fa-language"></i> English & Japanese (JLPT N2)
+              </p>
+              <div class="buttons is-justify-content-center-mobile">
+                <a href="docs/Resume_A M M Parvez.pdf" class="button is-link is-light">
+                  <span class="icon"><i class="fas fa-file-download"></i></span>
+                  <span>Download Resume</span>
+                </a>
+                <a href="https://github.com/AbdullahParvez" target="_blank" class="button is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/ammparvez" target="_blank" class="button is-info">
+                  <span class="icon"><i class="fab fa-linkedin"></i></span>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="section">
       <div class="container">
-        <div class="level">
-          <div class="level-item has-text-centered">
-            <figure class="image is-128x128">
-              <img class="is-rounded" src="img/parvez.jpg">
-            </figure>
+        <div class="columns is-desktop">
+
+          <div class="column is-8-desktop">
+
+            <section class="mb-6">
+              <h3 class="title is-3 accent-text">About Me</h3>
+              <hr>
+              <p class="is-size-5 text-muted" style="line-height: 1.7;">
+                Software Engineer with <strong>5+ years of production experience in Japan</strong>. Specialized in
+                building end-to-end intelligent systems, transitioning workflows from manual business actions into
+                automated, data-centric pipelines. Adept at integrating AI-driven elements like LLM orchestrations
+                (RAG),
+                Predictive ML Algorithms, and Reinforcement Learning architectures into scalable Python backends.
+              </p>
+            </section>
+
+            <section class="mb-6">
+              <h3 class="title is-3 accent-text">Professional Experience</h3>
+              <hr>
+
+              <div class="card-custom">
+                <div class="is-flex is-justify-content-between is-align-items-start is-flex-wrap-wrap mb-3">
+                  <div>
+                    <h4 class="title is-4 mb-1">Software Engineer (Python / AI)</h4>
+                    <p class="subtitle is-6 text-muted mt-1">Yokoyama System Management Research Co., Ltd. | Nagoya,
+                      Japan
+                    </p>
+                  </div>
+                  <span class="tag is-info is-light">6/2025 - Present</span>
+                </div>
+                <div class="content text-muted">
+                  <ul>
+                    <li>Architected a multi-modal blueprint price prediction ecosystem using an <strong>MLLM</strong>
+                      for feature extraction paired with trained <strong>XGBoost</strong> engines.</li>
+                    <li>Engineered image & text embedding vector search platforms leveraging production <strong>Vector
+                        Databases</strong> for immediate manufacturing diagram mapping.</li>
+                    <li>Built an optimized semantic context matching framework incorporating <strong>Reinforcement
+                        Learning</strong> loops driven by explicit user feedback.</li>
+                    <li>Designed advanced complex multi-level BOM nested tree-traversal calculation pipelines for
+                      instantaneous client cost simulations.</li>
+                  </ul>
+                  <div class="tags mt-3">
+                    <span class="tag tag-custom">Python</span><span class="tag tag-custom">FastAPI</span><span
+                      class="tag tag-custom">LLM APIs</span>
+                    <span class="tag tag-custom">Vector DBs</span><span class="tag tag-custom">PyTorch</span><span
+                      class="tag tag-custom">Scikit-Learn</span>
+                    <span class="tag tag-custom">Docker</span><span class="tag tag-custom">Vue.js</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-custom">
+                <div class="is-flex is-justify-content-between is-align-items-start is-flex-wrap-wrap mb-3">
+                  <div>
+                    <h4 class="title is-4 mb-1">Software Engineer (Python / Fullstack)</h4>
+                    <p class="subtitle is-6 text-muted mt-1">Kishida Electric Co., Ltd. | Nobeoka, Japan</p>
+                  </div>
+                  <span class="tag is-dark">4/2021 - 5/2025</span>
+                </div>
+                <div class="content text-muted">
+                  <ul>
+                    <li>Designed, deployed, and scaled a centralized custom ERP operation manager controlling everyday
+                      structural telemetry, vehicle coordinates, and assets.</li>
+                    <li>Created and deployed native cross-platform mobile reporting applications alongside structural
+                      training setups targeting localized certification targets.</li>
+                  </ul>
+                  <div class="tags mt-3">
+                    <span class="tag tag-custom">Django</span><span class="tag tag-custom">DRF</span><span
+                      class="tag tag-custom">PostgreSQL</span>
+                    <span class="tag tag-custom">Redis</span><span class="tag tag-custom">Celery</span><span
+                      class="tag tag-custom">Daphne</span>
+                    <span class="tag tag-custom">Nginx</span><span class="tag tag-custom">Flutter</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-custom">
+                <div class="is-flex is-justify-content-between is-align-items-start is-flex-wrap-wrap mb-3">
+                  <div>
+                    <h4 class="title is-4 mb-1">Cyber Security Engineer</h4>
+                    <p class="subtitle is-6 text-muted mt-1">Cloudly Solutions | Dhaka, Bangladesh</p>
+                  </div>
+                  <span class="tag is-dark">5/2018 - 3/2019</span>
+                </div>
+                <div class="content text-muted">
+                  <ul>
+                    <li>Constructed automated threat identification prototypes specializing in active OSINT information
+                      scraping frameworks transforming text into clear signals.</li>
+                    <li>Executed structured Vulnerability Assessments and Penetration Testing (VA/PT) across
+                      infrastructure layouts.</li>
+                  </ul>
+                  <div class="tags mt-3">
+                    <span class="tag tag-custom">Kali Linux</span><span class="tag tag-custom">Nmap</span><span
+                      class="tag tag-custom">Burp Suite</span>
+                    <span class="tag tag-custom">OWASP ZAP</span><span class="tag tag-custom">Python</span><span
+                      class="tag tag-custom">Java</span>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </div>
+
+          <div class="column is-4-desktop">
+
+            <section class="mb-6">
+              <h3 class="title is-3 accent-text">Technical Skills</h3>
+              <hr>
+              <div class="card-custom">
+                <div class="mb-4">
+                  <h5 class="is-size-6 font-weight-bold accent-text mb-2">AI & MACHINE LEARNING</h5>
+                  <div class="tags">
+                    <span class="tag tag-custom">LLM API</span><span class="tag tag-custom">RAG</span><span
+                      class="tag tag-custom">Vector Databases</span>
+                    <span class="tag tag-custom">PyTorch</span><span class="tag tag-custom">TensorFlow</span><span
+                      class="tag tag-custom">XGBoost</span><span class="tag tag-custom">RL</span>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <h5 class="is-size-6 font-weight-bold accent-text mb-2">BACKEND & INFRASTRUCTURE</h5>
+                  <div class="tags">
+                    <span class="tag tag-custom">Python</span><span class="tag tag-custom">FastAPI</span><span
+                      class="tag tag-custom">Django</span>
+                    <span class="tag tag-custom">Node.js</span><span class="tag tag-custom">Docker</span><span
+                      class="tag tag-custom">PostgreSQL</span>
+                    <span class="tag tag-custom">Redis</span><span class="tag tag-custom">Celery</span><span
+                      class="tag tag-custom">AWS</span>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="is-size-6 font-weight-bold accent-text mb-2">FRONTEND & MOBILE</h5>
+                  <div class="tags">
+                    <span class="tag tag-custom">Vue.js</span><span class="tag tag-custom">React.js</span><span
+                      class="tag tag-custom">JavaScript (ES6+)</span><span class="tag tag-custom">Flutter</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="mb-6">
+              <h3 class="title is-3 accent-text">Certifications</h3>
+              <hr>
+              <div class="card-custom">
+                <p class="mb-2">
+                  <i class="fas fa-certificate accent-text"></i> <strong>AWS Certified Developer</strong> <span
+                    class="text-muted">(- Associate)</span>
+                </p>
+                <p>
+                  <i class="fas fa-certificate accent-text"></i> <strong>FE (基本情報技術者試験)</strong> <span
+                    class="text-muted">- Fundamental IT Engineer</span>
+                </p>
+              </div>
+            </section>
+
+            <section class="mb-6">
+              <h3 class="title is-3 accent-text">Education</h3>
+              <hr>
+              <div class="card-custom">
+                <div class="mb-4">
+                  <h5 class="is-size-6 strong mb-0">Master's in Information Technology</h5>
+                  <small class="text-muted">University of Dhaka (Grad. 2019)</small>
+                </div>
+                <div>
+                  <h5 class="is-size-6 strong mb-0">B.Sc. Engineering in ECE / Applied Physics</h5>
+                  <small class="text-muted">University of Chittagong (Grad. 2016)</small>
+                </div>
+              </div>
+            </section>
+
           </div>
         </div>
-        <div class="columns has-text-centered">
-          <div class="column">
-            <h1 class="title is-1">
-              A M M Parvez
-            </h1>
-            <h2 class="subtitle">
-              FullStack Django Dev, Miyazaki, Japan
-            </h2>
-            <p>
-              <a href="docs/Resume of AMM PARVEZ.pdf" class="icon has-text-light">
-                <i class="fas fa-file-word"></i> <strong>Resume</strong>
-              </a>
-            </p>
+
+        <section class="mt-6">
+          <h3 class="title is-3 accent-text">Highlighted AI Solutions Built</h3>
+          <hr>
+          <div class="project-grid">
+
+            <div class="card-custom">
+              <h4 class="title is-5 mb-2"><i class="fas fa-envelope-open-text accent-text"></i> LLM-Powered Email
+                Workspace</h4>
+              <p class="text-muted is-size-6">Intelligent dispatch manager generating context-aware draft completions,
+                computing automated response priority vectors, and abstracting custom text summaries natively into
+                Gmail/Outlook extensions.</p>
+            </div>
+
+            <div class="card-custom">
+              <h4 class="title is-5 mb-2"><i class="fas fa-search-plus accent-text"></i> Feedback-Optimized Vector
+                Engine</h4>
+              <p class="text-muted is-size-6">Item discovery platform combining geometric embedding metrics with online
+                Reinforcement Learning systems to dynamically adapt retrieval indexes based on active operator choices.
+              </p>
+            </div>
+
+            <div class="card-custom">
+              <h4 class="title is-5 mb-2"><i class="fas fa-file-invoice-dollar accent-text"></i> End-to-End Automated
+                OCR Pipeline</h4>
+              <p class="text-muted is-size-6">A production cross-platform OCR ecosystem extracting values from raw
+                receipts and converting them automatically into structured, valid accounting ledger records instantly.
+              </p>
+            </div>
+
           </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="footer" style="background-color: #0b0f19; border-top: 1px solid #334155; padding: 3rem 1.5rem;">
+      <div class="content has-text-centered text-muted">
+        <p>© 2026 A M M Parvez. Crafted utilizing Bulma Layout Engine.</p>
+        <div class="is-flex is-justify-content-center" style="gap: 1.5rem;">
+          <a href="https://github.com/AbdullahParvez" class="contact-link"><i class="fab fa-github fa-lg"></i></a>
+          <a href="https://www.linkedin.com/in/ammparvez" class="contact-link"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="mailto:ammparvez@gmail.com" class="contact-link"><i class="fas fa-envelope fa-lg"></i></a>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">About Me</h1>
-      <hr />
-      <!-- <p>Experienced Software Engineer with a strong background in Django development and digital transformation.
-        Proven ability to develop and implement efficient software solutions to streamline business processes.</p> -->
-        <li>I’ve been working as a System Engineer in Japan for over 4 years and have experience developing and implementing efficient software solutions to streamline business processes.
-</li>
-        <li>Passionate about machine learning and eager to apply these skills to develop productive and efficient systems.</li>
-        <li>Seeking a challenging position as a Software Engineer where I can leverage my technical expertise and contribute to the organization's success.</li>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Experience</h1>
-      <hr />
-      <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <!-- <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/dunder-mifflin-logo.png" alt="Placeholder image">
-              </figure>
-            </div> -->
-            <div class="media-content">
-              <p class="title is-4">株式会社岸田電業</p>
-              <p class="subtitle is-6">System Engineer - <time datetime="2021-4">April 2021</time> - <time
-                  datetime="2025-2">Present</time> </p>
-            </div>
-          </div>
-          <div class="content">
-            <ul>
-              <li>Developed and deployed an ERP application using Django, significantly improving efficiency and data management for the company.</li>
-              <li>Managed the deployment and ongoing maintenance of the ERP application on a Linux server environment, ensuring system stability and performance.</li>
-                <li>Collaborated with other employees to design and implement the ERP application, prioritizing user experience and incorporating feedback to ensure user-friendliness. </li>
-<li>Successfully designed and built multiple mobile applications for reporting, preparing for test, etc. using Flutter.</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Django</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Redis</span>
-              <span class="tag">Celery</span>
-              <span class="tag">Nginx</span>
-              <span class="tag">Daphne</span>
-              <span class="tag">Dart</span>
-              <span class="tag">Flutter</span>
-              <span class="tag">SQLite</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="media">
-            <!-- <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="img/pied-piper-logo.png" alt="Placeholder image">
-              </figure>
-            </div> -->
-            <div class="media-content">
-              <p class="title is-4">Cloudly Solutions</p>
-              <p class="subtitle is-6">Cyber Security Engineer - <time datetime="2018-5">May 2018</time> - <time
-                  datetime="2019-3">March 2019</time></p>
-            </div>
-          </div>
-          <div class="content">
-            <ul>
-              <li>Collected and analyzed open-source data for specific target</li>
-              <li>Developed tools for processing and analyzing collected data</li>
-              <li>Conducted VA/PT analysis</li>
-            </ul>
-            <div class="tags">
-              <span class="tag">Kali Linux</span>
-              <span class="tag">Python</span>
-              <span class="tag">Java</span>
-              <span class="tag">Nmap</span>
-              <span class="tag">Burp Suite</span>
-              <span class="tag">Poatman</span>
-              <span class="tag">OWASP-ZAP</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Readers Assistant</p>
-                <figure class="image is-3by2">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/carousel/r1.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Kotoba</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/carousel/k1.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Data Defender</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-3-modal" src="img/carousel/d1.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Education / Training</h1>
-      <hr />
-      <div class="card">
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-4">Master in Information Technology</p>
-            <p class="subtitle is-6">University of Dhaka - <time datetime="2017-9">September 2017</time> - <time
-                datetime="2019-3">March 2019</time></p>
-          </div>
-          <!-- <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
-          </div> -->
-        </div>
-      </div>
-      <div class="card card-gap">
-        <div class="card-content">
-          <div class="content">
-            <p class="title is-4">B. Sc. Engineering in Applied Physics, Electronics and Communication Engineering</p>
-            <p class="subtitle is-6">University of Chittagong - <time datetime="2012-1">January 2012</time> - <time
-                datetime="2016-12">December 2016</time></p>
-          </div>
-          <!-- <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
-          </div> -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Contact</h1>
-      <hr />
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="https://github.com/AbdullahParvez" class="icon is-large">
-              <i class="fab fa-2x fa-github"></i>
-            </a>
-            <p class="heading"><a href="https://github.com/AbdullahParvez">github.com/AbdullahParvez</a></p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <a href="www.linkedin.com/in/ammparvez" class="icon is-large">
-              <i class="fab fa-2x fa-linkedin-in"></i>
-            </a>
-            <p class="heading"><a href="www.linkedin.com/in/ammparvez">linkedin</a></p>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </section>
-
-  <!-- Modals -->
-  <div id="project-1-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Readers Assistant</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-1-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/r1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/r2.png">
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>A web application using Django to make reading Japanese easier. A reader can select a Japanese word and see its meaning. Moreover, users can also see the details of kanji in a word.</p>
-
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Django</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">JavaScript</span>
-          </div>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-2-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Kotoba</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-2-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/k1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/k2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/k3.png">
-          </figure>
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>A mobile app using Flutter to learn and practice Japanese vocabulary. Users can also read the details of kanjis in that word.</p>
-          <div class="tags">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
-            <span class="tag">Python</span>
-            <span class="tag">DRF</span>
-            <span class="tag">SQLite</span>
-          </div>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-3-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Data Defender</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-3-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/d2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/d3.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/d4.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>This application can provide the user with the following security features:</p>
-          <ul>
-            <li>Securing sensitive information</li>
-<li>Protect sensitive apps</li>
-<li>Send the location via SMS and mail, and take a picture automatically when someone tries to break the password.</li>
-          </ul>
-          <div class="tags">
-            <span class="tag">Java</span>
-            <span class="tag">SQLite</span>
-            <span class="tag">Android Studio</span>
-            <span class="tag">XML</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <!-- <p>
-        <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon has-text-primary">
-          <i class="fab fa-github"></i> <strong>devfolio</strong></a>
-      </p> -->
-    </div>
-  </footer>
-
-  <script src="js/bundle.js"></script>
-</body>
+  </body>
 
 </html>
